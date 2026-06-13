@@ -1,0 +1,7 @@
+polars
+scikit-learn
+xgboost
+optuna
+pandas
+numpy
+matplotlib
