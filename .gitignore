@@ -1,0 +1,50 @@
+# ---------------------------------------------------
+# 1. BIG DATA & RESTRICTED FILES (CRITICAL)
+# ---------------------------------------------------
+*.csv
+*.tsv
+*.xlsx
+*.rds
+*.Rds
+*.rda
+*.RData
+*.h5
+*.hdf5
+*.parquet
+*.feather
+data/
+raw_data/
+
+# ---------------------------------------------------
+# 2. PYTHON & JUPYTER
+# ---------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+venv/
+env/
+.env
+
+# ---------------------------------------------------
+# 3. R & RSTUDIO
+# ---------------------------------------------------
+.Rhistory
+.Rapp.history
+.Ruserdata
+.Rproj.user/
+*-Ex.R
+/*.tar.gz
+/*.Rcheck/
+
+# ---------------------------------------------------
+# 4. OS GENERATED FILES
+# ---------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
