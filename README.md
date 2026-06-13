@@ -1,6 +1,7 @@
-# genomic-biomarkers-smoking
-
 # Genomic Predisposition to Smoking
+
+## Current Status: Active Research
+This project is currently ongoing. Final biological insights will be updated upon project completion.
 
 ## About the Project
 This project finds genetic links to smoking. I built this during my research internship at the Institut Pasteur (IBMS Lab). The goal is to predict if a person is a smoker based on their genes. The dataset contains over 200,000 genetic features.
