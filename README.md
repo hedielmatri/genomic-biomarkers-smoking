@@ -10,7 +10,7 @@ I cannot share the raw genomic data. This is due to strict patient privacy rules
 
 ## Tools and Methods
 I used several tools to handle the big data and train the models:
-* **Data Processing:** I used Polars and Dask to load and clean the massive dataset quickly.
+* **Data Processing:** I used Polars to load and clean the massive dataset quickly.
 * **Feature Selection:** I filtered the genes using Minor Allele Frequency (MAF). I also used Chi-squared tests and LASSO regression to find the most important genes.
 * **Machine Learning:** I trained predictive models using XGBoost and Support Vector Machines (SVM).
 * **Optimization:** I used Optuna to find the best settings for the models.
