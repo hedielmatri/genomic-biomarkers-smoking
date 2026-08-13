@@ -1,7 +1,10 @@
 polars
+pandas
+numpy
 scikit-learn
 xgboost
 optuna
-pandas
-numpy
 matplotlib
+umap-learn
+torch
+pyarrow
