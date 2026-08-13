@@ -26,10 +26,10 @@ The raw genomic data cannot be shared. However, the full code pipeline is provid
 
 
 ## Repository Structure
-- notebooks/data_preparation.ipynb: This file shows how the data was cleaned and formatted.
-- notebooks/data_inference.ipynb: This file shows how the baseline models were trained, how stability selection was run, and how Optuna was used for optimisation.
+- data_preparation.ipynb: This file shows how the data was cleaned and formatted.
+- data_inference.ipynb: This file shows how the baseline models were trained, how stability selection was run, and how Optuna was used for optimisation.
 - inference_by_PLINK_preparation.ipynb: This script contains the feature selection, Optuna optimisation, and SVM/Random Forest models followed by a plink preparation.
 - PLINK_filtering.ipynb: This script executes the PLINK QC pipeline, LD pruning, and PCA generation.
-- AI_solutions_testing_for_result_comparaison.ipynb: This file tests the Polygenic Risk Score modeling and validates models comparing Caucasian and African cohorts.
+- AI_solutions_testing_for_result_comparaison.ipynb: This file evaluates automated AI solutions and feature selection pipelines to benchmark results and test whether the predictive performance ceiling could be surpassed.
 - rfe_testing.ipynb: This script executes the PLINK logistic hybrid regression and tests 10 fold CV with RFE.
 - data_nn_snp_association.py: The PyTorch script building the EpistaticFusionNet, SVD covariate extraction, and permutation feature selection.
