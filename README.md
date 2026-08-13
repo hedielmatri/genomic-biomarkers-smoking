@@ -19,10 +19,10 @@ The raw genomic data cannot be shared. However, the full code pipeline is provid
     - Polars was used to load and clean the dataset quickly.
     - A PLINK QC pipeline was engineered for quality control. This included autosomal filtering, variant missingness thresholds, Minor Allele Frequency (MAF) filtering, and linkage disequilibrium (LD) pruning.
     - Principal Component Analysis (PCA) and Singular Value Decomposition (SVD) were used to try and control for genetic stratification.
-- Feature selection: Genes were filtered using MAF, Chi-squared tests, ANOVA F-tests, Recursive Feature Elimination (RFE), and LASSO regression to try and find the most important variants. A custom permutation method was also built to test features against random noise.
+- Feature selection: Genes were filtered using MAF, Chi squared tests, ANOVA F tests, Recursive Feature Elimination (RFE), and LASSO regression to try and find the most important variants. A custom permutation method was also built to test features against random noise.
 - Machine learning: Predictive models were trained using XGBoost, Support Vector Machines (SVM), Random Forest, and Logistic Regression. A Polygenic Risk Score (PRS) model was tested using Ridge Regression. To try and model nonlinear genomic risk, a Feedforward Neural Network (EpistaticFusionNet) was architected using Batch Norm1D regularization and SiLU activations. Double ML was also applied for causal AI.
 - Optimisation: Optuna's Bayesian framework was used to find the best settings for the models.
-- Evaluation: The models were evaluated using ROC-AUC scores, Precision Recall AUC, Youden's J-statistic, and classification reports. Models were also benchmarked comparing Caucasian and African cohorts.
+- Evaluation: The models were evaluated using ROC AUC scores, Precision Recall AUC, Youden's J statistic, and classification reports. Models were also benchmarked comparing Caucasian and African cohorts.
 
 
 ## Repository Structure
@@ -31,5 +31,5 @@ The raw genomic data cannot be shared. However, the full code pipeline is provid
 - inference_by_PLINK_preparation.ipynb: This script contains the feature selection, Optuna optimisation, and SVM/Random Forest models followed by a plink preparation.
 - PLINK_filtering.ipynb: This script executes the PLINK QC pipeline, LD pruning, and PCA generation.
 - AI_solutions_testing_for_result_comparaison.ipynb: This file tests the Polygenic Risk Score modeling and validates models comparing Caucasian and African cohorts.
-- rfe_testing.ipynb: This script executes the PLINK logistic hybrid regression and tests 10-fold CV with RFE.
+- rfe_testing.ipynb: This script executes the PLINK logistic hybrid regression and tests 10 fold CV with RFE.
 - data_nn_snp_association.py: The PyTorch script building the EpistaticFusionNet, SVD covariate extraction, and permutation feature selection.
